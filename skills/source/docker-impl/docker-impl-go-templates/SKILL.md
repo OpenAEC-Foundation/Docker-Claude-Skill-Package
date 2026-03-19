@@ -1,6 +1,12 @@
 ---
 name: docker-impl-go-templates
-description: "Guides Go template syntax for Docker --format flags including template functions, conditional expressions, range loops, table formatting, JSON output, and 30+ ready-to-use format patterns for inspect, ps, images, stats, network, and volume commands. Activates when formatting Docker command output, extracting specific fields from inspect, creating custom table output, or scripting Docker commands."
+description: >
+  Use when formatting Docker CLI output with --format flags or extracting
+  specific fields from docker inspect. Prevents broken template syntax
+  from missing braces, incorrect field paths, and unquoted json calls.
+  Covers Go template syntax, {{ .Field }}, json, table, range, if/else,
+  and ready-to-use format strings for inspect, ps, images, and stats.
+  Keywords: docker inspect, --format, Go template, json, table, range, docker ps format.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

@@ -1,6 +1,12 @@
 ---
 name: docker-impl-storage
-description: "Guides Docker storage implementation including named volumes vs bind mounts vs tmpfs, --mount vs -v syntax comparison, volume drivers (local, NFS, CIFS), backup and restore procedures, read-only volumes, database persistence patterns, Compose volume integration, and storage cleanup strategies. Activates when persisting data, mounting host directories, configuring database storage, backing up volumes, or managing disk space."
+description: >
+  Use when persisting container data, mounting host directories, or
+  configuring database storage volumes. Prevents data loss from anonymous
+  volumes on container removal and silent mount failures with -v syntax.
+  Covers named volumes, bind mounts, tmpfs, --mount vs -v, volume drivers,
+  NFS, CIFS, backup/restore, and Compose volume integration.
+  Keywords: docker volume, bind mount, tmpfs, --mount, -v, NFS, docker volume create, volumes-from.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

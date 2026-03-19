@@ -1,6 +1,14 @@
 ---
 name: docker-errors-networking
-description: "Diagnoses and resolves Docker networking errors including DNS resolution failures between containers, connection refused, port mapping not working, default bridge communication issues, overlay network problems, firewall and iptables conflicts, container cannot reach internet, and network subnet conflicts. Activates when containers cannot communicate, DNS resolution fails, ports are not accessible, or network connectivity is broken."
+description: >
+  Use when containers cannot reach each other, DNS resolution fails
+  between services, or published ports are not accessible from the host.
+  Prevents connectivity failures from using the default bridge network,
+  which lacks automatic DNS resolution and proper isolation.
+  Covers DNS failures, connection refused, port mapping issues, iptables
+  conflicts, overlay network problems, subnet collisions.
+  Keywords: docker network, DNS resolution, connection refused, bridge,
+  overlay, iptables, port mapping, docker network inspect, subnet.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

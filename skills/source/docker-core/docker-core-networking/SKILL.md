@@ -1,6 +1,14 @@
 ---
 name: docker-core-networking
-description: "Guides Docker networking including bridge, host, overlay, macvlan, ipvlan, and none network drivers, DNS resolution and service discovery, port mapping and publishing, network isolation patterns, user-defined vs default bridge networks, and container-to-container communication. Activates when configuring Docker networks, debugging connectivity, setting up service discovery, or designing network architecture."
+description: >
+  Use when configuring Docker networks, debugging container connectivity, or
+  setting up service discovery between containers.
+  Prevents using the default bridge network in production, which lacks DNS
+  resolution and automatic service discovery.
+  Covers bridge, host, overlay, macvlan, ipvlan, and none drivers, DNS
+  resolution, port mapping, network isolation, and user-defined networks.
+  Keywords: docker network create, --network, -p, --publish, bridge, overlay,
+  macvlan, docker-compose networks, DNS, service discovery.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

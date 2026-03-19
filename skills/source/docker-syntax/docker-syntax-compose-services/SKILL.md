@@ -1,6 +1,15 @@
 ---
 name: docker-syntax-compose-services
-description: "Complete Docker Compose service configuration reference including image, build, command, ports, environment, volumes, networks, depends_on with health conditions, healthcheck, deploy with resource limits, restart policies, logging, profiles, extends, and all other service attributes. Activates when writing compose.yaml services, configuring service dependencies, setting up health checks, managing port mappings, or configuring resource limits."
+description: >
+  Use when writing compose.yaml service definitions, configuring service
+  dependencies, or setting up health checks and resource limits.
+  Prevents depends_on without condition: service_healthy, which starts
+  dependent services before the upstream is actually ready.
+  Covers image, build, command, ports, environment, volumes, networks,
+  depends_on with health conditions, healthcheck, deploy, restart, logging,
+  profiles, and extends directives.
+  Keywords: services, depends_on, condition: service_healthy, healthcheck,
+  ports, volumes, networks, deploy, restart, profiles, compose.yaml.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Compose v2."
 metadata:

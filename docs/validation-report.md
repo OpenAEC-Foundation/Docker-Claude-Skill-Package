@@ -107,9 +107,42 @@ All 22 skills have the required structural elements, though naming varies by ski
 
 ---
 
+## YAML Frontmatter Format Compliance (Audit Remediation)
+
+**Date**: 2026-03-19
+**Trigger**: Post-publication audit revealed that the original validation (above) did not check YAML frontmatter *format* — only presence and content. Specifically, the `description` field must use the YAML folded block scalar (`>`) syntax rather than quoted strings, per the Claude skill specification.
+
+### Finding
+
+All 22 skills originally used quoted-string descriptions (e.g., `description: "Activates when..."`). The correct format is:
+
+```yaml
+description: >
+  Activates when the user works with Docker networking...
+```
+
+This was missed during the initial P-003 validation because the check verified that `description:` existed and contained trigger words, but did not enforce the folded block scalar format requirement.
+
+### Remediation
+
+All 22 SKILL.md files have been migrated from quoted strings to the `>` (folded block scalar) format for the `description` field. No other frontmatter fields were affected.
+
+| Item | Status |
+|------|--------|
+| Skills requiring migration | 22 / 22 |
+| Skills successfully migrated | 22 / 22 |
+| Format verified after migration | 22 / 22 |
+| Content preserved (trigger words intact) | 22 / 22 |
+
+### Lesson
+
+The P-003 validation checklist should include a format-level check for YAML frontmatter fields, not just a presence-and-content check. This has been noted for future skill packages.
+
+---
+
 ## Issues Found
 
-**None.** All 22 skills pass all 7 validation criteria.
+**None.** All 22 skills pass all 7 validation criteria. The YAML frontmatter format gap identified above has been fully remediated.
 
 ---
 

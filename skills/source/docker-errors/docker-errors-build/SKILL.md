@@ -1,6 +1,13 @@
 ---
 name: docker-errors-build
-description: "Diagnoses and resolves Docker build errors including COPY/ADD file not found, build context too large, unexpected cache invalidation, BuildKit mount errors, multi-stage reference errors, base image pull failures, platform mismatch, ARG/ENV scope issues, permission errors during build, and Dockerfile syntax errors. Activates when encountering docker build failures, debugging cache issues, fixing COPY errors, or troubleshooting BuildKit problems."
+description: >
+  Use when debugging Docker build failures or unexpected cache behavior.
+  Prevents wasted hours from misunderstanding COPY context paths, cache
+  invalidation rules, and BuildKit mount syntax.
+  Covers build errors, COPY/ADD not found, context too large, cache misses,
+  ARG/ENV scope, multi-stage reference errors, platform mismatch.
+  Keywords: docker build, COPY failed, cache invalidation, BuildKit,
+  multi-stage, ARG, --mount, exec format error, build context.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

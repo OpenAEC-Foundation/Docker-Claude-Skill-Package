@@ -1,6 +1,12 @@
 ---
 name: docker-syntax-cli-images
-description: "Complete Docker image and system CLI reference including docker build and buildx, pull, push, tag, image listing with filters and format, image and system pruning, save/load for offline transfer, history, manifest for multi-platform, and system management commands (df, info, version, context). Activates when building images, managing registries, cleaning up disk space, transferring images, or checking system status."
+description: >
+  Use when building, tagging, pushing, or cleaning up Docker images.
+  Prevents dangling image accumulation from missing prune commands and
+  broken deployments from incorrect tag or push sequences.
+  Covers docker buildx build, pull, push, tag, images, rmi, image prune,
+  save, load, history, manifest inspect, system df, and system prune.
+  Keywords: docker build, docker pull, docker push, docker tag, docker images, docker save, docker system prune.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

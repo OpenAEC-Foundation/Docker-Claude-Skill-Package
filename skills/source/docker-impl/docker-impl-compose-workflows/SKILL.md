@@ -1,6 +1,12 @@
 ---
 name: docker-impl-compose-workflows
-description: "Guides Docker Compose development workflows including profiles for optional services, extends and include directives, merge and override patterns with multiple Compose files, compose.override.yaml conventions, environment variable precedence and .env file rules, compose watch for live file sync, and remote Compose file loading. Activates when setting up development workflows, managing environment-specific configs, using profiles, merging Compose files, or configuring live reload with compose watch."
+description: >
+  Use when setting up multi-environment Compose workflows or merging
+  override files. Prevents environment variable shadowing from incorrect
+  precedence and broken extends from circular dependencies.
+  Covers profiles, extends, include, compose.override.yaml, .env file
+  precedence, compose watch, and multi-file merge patterns.
+  Keywords: docker compose, profiles, extends, include, override, .env, compose watch, environment.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Compose v2."
 metadata:

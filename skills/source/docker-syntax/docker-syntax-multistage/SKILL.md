@@ -1,6 +1,14 @@
 ---
 name: docker-syntax-multistage
-description: "Guides Docker multi-stage build patterns including stage naming with FROM AS, COPY --from for artifact extraction, parallel build stages, --target for partial builds, builder pattern for compiled languages, test stages, shared dependency stages, and minimal production images. Activates when optimizing Docker image size, separating build and runtime dependencies, creating production-ready images, or implementing CI/CD build pipelines."
+description: >
+  Use when optimizing Docker image size, separating build-time and runtime
+  dependencies, or creating minimal production images.
+  Prevents shipping compilers, build tools, and source code in production
+  images by failing to use COPY --from to extract only final artifacts.
+  Covers FROM AS stage naming, COPY --from, parallel stages, --target for
+  partial builds, builder pattern, test stages, and shared dependency stages.
+  Keywords: FROM AS, COPY --from, --target, docker build --target,
+  multi-stage, builder pattern, distroless, alpine, scratch.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+ with BuildKit."
 metadata:

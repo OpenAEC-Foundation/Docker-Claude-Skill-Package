@@ -1,6 +1,14 @@
 ---
 name: docker-agents-review
-description: "Validates Docker configurations by checking Dockerfiles for best practices, Compose files for correctness, security compliance, build optimization, and known anti-patterns. Provides structured validation checklists for Dockerfile review, Compose review, security audit, and production readiness assessment. Activates when reviewing Dockerfiles, validating Compose files, auditing container security, or checking Docker configurations before deployment."
+description: >
+  Use when reviewing a Dockerfile or Compose file before merging,
+  deploying, or auditing container security posture.
+  Prevents shipping containers that run as root, lack health checks,
+  expose secrets in layers, or use mutable tags like latest.
+  Covers Dockerfile best practices, Compose validation, security audit,
+  production readiness checks, anti-pattern detection.
+  Keywords: Dockerfile review, docker compose config, HEALTHCHECK,
+  USER, --no-cache, .dockerignore, capabilities, secrets, latest tag.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+ and Docker Compose v2."
 metadata:

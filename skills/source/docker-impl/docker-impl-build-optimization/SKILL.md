@@ -1,6 +1,13 @@
 ---
 name: docker-impl-build-optimization
-description: "Guides Docker build optimization including layer caching rules, cache invalidation triggers, instruction ordering for cache efficiency, .dockerignore patterns, build context optimization, cache mount patterns for all major package managers, bind mounts for large contexts, and CI/CD cache sharing with cache backends. Activates when optimizing Docker build times, reducing image sizes, fixing cache invalidation issues, or configuring build caching in CI/CD pipelines."
+description: >
+  Use when optimizing Docker build times or fixing unexpected cache
+  invalidation. Prevents full rebuilds from incorrect instruction ordering
+  and bloated images from missing .dockerignore entries.
+  Covers layer caching rules, cache invalidation triggers, instruction
+  ordering, .dockerignore, --mount=type=cache, bind mounts, and CI/CD
+  cache backends with BuildKit.
+  Keywords: docker build, cache, .dockerignore, BuildKit, --mount=type=cache, layer, COPY, RUN.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+ with BuildKit."
 metadata:

@@ -1,6 +1,12 @@
 ---
 name: docker-syntax-cli-containers
-description: "Complete Docker container CLI reference including docker run with all major flags, exec, logs, inspect with Go templates, stats, top, events, container lifecycle commands (create, start, stop, restart, kill, rm, prune), cp, diff, and ps with filters and format. Activates when running containers, executing commands in containers, reading logs, inspecting container state, or managing container lifecycle."
+description: >
+  Use when running, inspecting, or managing Docker containers from the CLI.
+  Prevents silent data loss from missing -v on rm, zombie containers from
+  skipped stop commands, and incorrect docker run flag combinations.
+  Covers docker run, exec, logs, inspect, stats, ps, cp, stop, kill, rm,
+  prune, and container lifecycle management.
+  Keywords: docker run, docker exec, docker logs, docker inspect, docker ps, docker stop, docker rm.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

@@ -1,6 +1,14 @@
 ---
 name: docker-errors-runtime
-description: "Diagnoses and resolves Docker container runtime errors including OOM killed, permission denied, port already in use, container exits immediately, exec format error, read-only filesystem write attempts, PID limit exceeded, resource exhaustion, and provides the container debugging workflow (logs → exec → inspect → events). Activates when containers crash, exit unexpectedly, run out of memory, have permission issues, or need debugging."
+description: >
+  Use when a running container crashes, exits unexpectedly, or behaves
+  incorrectly at runtime.
+  Prevents misdiagnosis of OOM kills, permission denied errors, and
+  silent container exits by following the logs-exec-inspect-events workflow.
+  Covers exit codes, OOMKilled, port conflicts, exec format error,
+  read-only filesystem, PID limits, resource exhaustion debugging.
+  Keywords: docker logs, docker inspect, OOMKilled, exit code 137,
+  permission denied, port already in use, SIGTERM, SIGKILL, docker exec.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

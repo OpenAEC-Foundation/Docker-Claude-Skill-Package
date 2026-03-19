@@ -1,6 +1,14 @@
 ---
 name: docker-errors-compose
-description: "Diagnoses and resolves Docker Compose errors including service dependency failures, orphan container warnings, port conflicts between services, volume mount permission issues, environment variable interpolation errors, profile dependency resolution, build context errors, and compose config validation failures. Activates when docker compose up fails, services won't start, dependencies time out, or Compose file has syntax errors."
+description: >
+  Use when docker compose up fails, services refuse to start, or
+  dependency health checks time out.
+  Prevents cascading failures from unvalidated Compose files, incorrect
+  depends_on conditions, and unescaped environment variable interpolation.
+  Covers service dependency errors, orphan containers, port conflicts,
+  volume permission issues, profile resolution, build context errors.
+  Keywords: docker compose up, docker compose config, depends_on,
+  service_healthy, orphan containers, variable interpolation, profiles.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Compose v2."
 metadata:

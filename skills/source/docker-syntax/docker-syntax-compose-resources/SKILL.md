@@ -1,6 +1,12 @@
 ---
 name: docker-syntax-compose-resources
-description: "Guides Docker Compose infrastructure resources including top-level networks, volumes, configs, and secrets definitions, network drivers and IPAM configuration, external resources, mounting configs and secrets in services, volume drivers and options, and network aliases. Activates when defining Compose networks, creating named volumes, managing configs or secrets, or configuring network infrastructure in compose.yaml."
+description: >
+  Use when defining top-level networks, volumes, configs, or secrets in
+  compose.yaml. Prevents misconfigured network drivers, orphaned volumes,
+  and secrets mounted with wrong permissions.
+  Covers networks, volumes, configs, secrets, IPAM, external resources,
+  network aliases, volume drivers, and overlay networks.
+  Keywords: docker compose, networks, volumes, configs, secrets, IPAM, overlay, bridge.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Compose v2."
 metadata:

@@ -1,6 +1,14 @@
 ---
 name: docker-impl-cicd
-description: "Guides Docker CI/CD integration including GitHub Actions workflows with docker/build-push-action, registry authentication for Docker Hub and GHCR, multi-platform builds with buildx and QEMU, cache sharing in CI using GitHub Actions cache backend, build matrix strategies, image tagging conventions, and automated image publishing. Activates when setting up Docker CI/CD pipelines, pushing images to registries, building multi-platform images, or optimizing CI build times."
+description: >
+  Use when setting up Docker CI/CD pipelines, pushing images to registries,
+  or configuring multi-platform builds with GitHub Actions.
+  Prevents broken workflows from incorrect docker/build-push-action usage,
+  missing registry authentication, or misconfigured buildx cache backends.
+  Covers GitHub Actions workflows, GHCR and Docker Hub auth, buildx QEMU
+  multi-platform builds, cache-to/cache-from, image tagging conventions.
+  Keywords: docker/build-push-action, docker/login-action, buildx, QEMU,
+  GHCR, ghcr.io, docker push, CI/CD, GitHub Actions, matrix builds.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+ with BuildKit."
 metadata:

@@ -1,6 +1,14 @@
 ---
 name: docker-core-architecture
-description: "Guides Docker Engine architecture including daemon, containerd, runc, OCI standards, image and container concepts, layer filesystem, build context model, and Docker object lifecycle. Activates when explaining Docker concepts, understanding image layers, reasoning about container isolation, or setting up Docker environments."
+description: >
+  Use when designing Docker container architecture or explaining how Docker
+  Engine components interact.
+  Prevents misconceptions about container isolation, image layering, and the
+  relationship between daemon, containerd, and runc.
+  Covers Docker Engine architecture, OCI standards, image layers, container
+  lifecycle, build context model, and Docker object types.
+  Keywords: dockerd, containerd, runc, OCI, image layers, docker build,
+  docker run, BuildKit, container lifecycle.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

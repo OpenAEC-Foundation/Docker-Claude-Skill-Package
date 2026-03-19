@@ -1,6 +1,14 @@
 ---
 name: docker-core-security
-description: "Guides Docker security including image scanning with Docker Scout and Trivy, rootless Docker, non-root containers, Linux capabilities management, read-only filesystems, seccomp and AppArmor profiles, content trust, resource limits, and Docker Bench for Security. Activates when hardening containers, scanning images for vulnerabilities, implementing least-privilege containers, or auditing Docker security."
+description: >
+  Use when hardening containers, scanning images for vulnerabilities, or
+  implementing least-privilege Docker deployments.
+  Prevents running containers as root, exposing secrets in image layers, and
+  skipping vulnerability scanning before production deployment.
+  Covers Docker Scout, Trivy, rootless Docker, USER instruction, cap-drop,
+  read-only filesystems, seccomp, AppArmor, content trust, and resource limits.
+  Keywords: docker scout, trivy, USER, cap-drop, --read-only, seccomp,
+  AppArmor, --no-new-privileges, DOCKER_CONTENT_TRUST, docker-bench-security.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

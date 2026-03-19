@@ -1,6 +1,12 @@
 ---
 name: docker-impl-production
-description: "Guides production-ready Docker patterns including base image selection (scratch, alpine, slim, distroless), non-root USER configuration, signal handling with exec form and init processes, HEALTHCHECK patterns, entrypoint scripts with exec, OCI metadata labels, reproducible builds with digest pinning, and minimal attack surface. Activates when preparing containers for production, choosing base images, configuring health checks, writing entrypoint scripts, or hardening Dockerfiles."
+description: >
+  Use when hardening Dockerfiles for production deployment or choosing
+  base images. Prevents containers running as root, missing HEALTHCHECK
+  definitions, and zombie processes from shell-form ENTRYPOINT.
+  Covers base image selection, USER, HEALTHCHECK, exec form, init,
+  entrypoint scripts, OCI labels, digest pinning, and distroless images.
+  Keywords: USER, HEALTHCHECK, ENTRYPOINT, scratch, alpine, distroless, tini, exec form.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

@@ -1,6 +1,15 @@
 ---
 name: docker-syntax-dockerfile
-description: "Complete Dockerfile instruction reference including FROM, RUN, CMD, ENTRYPOINT, COPY, ADD, ENV, ARG, EXPOSE, VOLUME, WORKDIR, USER, HEALTHCHECK, LABEL, SHELL, STOPSIGNAL, ONBUILD, and parser directives. Activates when writing Dockerfiles, choosing between CMD and ENTRYPOINT, configuring COPY vs ADD, setting health checks, or understanding instruction syntax and behavior."
+description: >
+  Use when writing or reviewing Dockerfiles, choosing between CMD and
+  ENTRYPOINT, or selecting COPY vs ADD.
+  Prevents shell-form CMD that blocks signal propagation, ADD for local files
+  where COPY suffices, and missing HEALTHCHECK in production images.
+  Covers all 17 Dockerfile instructions: FROM, RUN, CMD, ENTRYPOINT, COPY,
+  ADD, ENV, ARG, EXPOSE, VOLUME, WORKDIR, USER, HEALTHCHECK, LABEL, SHELL,
+  STOPSIGNAL, ONBUILD, and parser directives.
+  Keywords: FROM, RUN, CMD, ENTRYPOINT, COPY, ADD, HEALTHCHECK, USER,
+  WORKDIR, ARG, ENV, # syntax=docker/dockerfile:1.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+ with BuildKit."
 metadata:

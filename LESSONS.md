@@ -33,3 +33,15 @@
 **Context:** Including a path to a reference skill (Tauri core-architecture SKILL.md) in every agent prompt.
 **Lesson:** Agents produce more consistent formatting when given a concrete reference skill to follow. The Tauri architecture skill works well as a universal format reference.
 **Applicable to:** Masterplan template, agent prompt design.
+
+## L-006: YAML Frontmatter Descriptions Need Folded Block Scalar Format
+**Date:** 2026-03-19
+**Context:** Audit of all 22 skills revealed YAML frontmatter descriptions used quoted strings and lacked trigger-optimized descriptions.
+**Lesson:** YAML frontmatter descriptions must use folded block scalar (`>`) format with 'Use when...' triggers, anti-pattern warnings, and Keywords. The initial 22 skills all used quoted strings and lacked trigger-optimized descriptions, requiring a full migration during audit.
+**Applicable to:** All skill packages, WAY_OF_WORK.md skill standards.
+
+## L-007: Per-Phase Commits Are Important for Audit Traceability
+**Date:** 2026-03-19
+**Context:** Phases 2-7 were committed in bulk rather than per-phase.
+**Lesson:** Per-phase commits are important for audit traceability. Bulk-committing multiple phases makes it impossible to verify phase boundaries in git history.
+**Applicable to:** All future skill packages, workflow template.

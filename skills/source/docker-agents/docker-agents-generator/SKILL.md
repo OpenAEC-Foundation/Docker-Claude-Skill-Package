@@ -1,6 +1,14 @@
 ---
 name: docker-agents-generator
-description: "Generates production-ready Dockerfiles and Docker Compose configurations from application requirements. Provides language-specific templates for Node.js, Python, Go, Java, Rust, and .NET, development and production Compose stacks, proper security defaults, health checks, and .dockerignore generation. Activates when generating Dockerfiles from scratch, containerizing an existing application, creating Compose configurations, or scaffolding Docker infrastructure for a project."
+description: >
+  Use when containerizing an application from scratch or generating
+  Dockerfile and Compose configurations for a new project.
+  Prevents insecure defaults by enforcing non-root users, multi-stage
+  builds, health checks, and proper .dockerignore from the start.
+  Covers Dockerfile generation for Node.js, Python, Go, Java, Rust,
+  .NET, dev/prod Compose stacks, .dockerignore, .env templates.
+  Keywords: Dockerfile, docker-compose.yml, multi-stage build,
+  .dockerignore, HEALTHCHECK, non-root, FROM, COPY, ENTRYPOINT.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+ and Docker Compose v2."
 metadata:

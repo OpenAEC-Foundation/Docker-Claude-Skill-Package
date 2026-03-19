@@ -1,6 +1,14 @@
 ---
 name: docker-syntax-buildkit
-description: "Guides BuildKit-specific Dockerfile features including syntax directive, heredoc syntax for multi-line RUN, cache mounts for package managers, secret mounts for credentials, SSH mounts for private repos, bind mounts, tmpfs mounts, cache backends, and platform-specific ARGs. Activates when optimizing Dockerfile builds, mounting secrets during build, caching package manager downloads, or using heredoc syntax in RUN instructions."
+description: >
+  Use when optimizing Dockerfile builds with cache mounts, mounting secrets
+  during build, or writing multi-line RUN with heredoc syntax.
+  Prevents baking credentials into image layers, cache-busting on every build
+  due to missing --mount=type=cache, and using outdated non-BuildKit syntax.
+  Covers syntax directive, heredoc RUN, --mount=type=cache for apt/npm/pip/go,
+  --mount=type=secret, --mount=type=ssh, bind mounts, and platform ARGs.
+  Keywords: # syntax=docker/dockerfile:1, --mount=type=cache, --mount=type=secret,
+  --mount=type=ssh, heredoc, BUILDKIT_INLINE_CACHE, TARGETPLATFORM.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+ with BuildKit (default)."
 metadata:
