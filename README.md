@@ -1,21 +1,20 @@
-# Docker Claude Skill Package
+# Docker & Docker Compose Skill Package for Claude
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Docker](https://img.shields.io/badge/Docker-Engine%2024%2B-2496ED?logo=docker&logoColor=white)](https://docs.docker.com)
-[![Compose](https://img.shields.io/badge/Docker%20Compose-v2-2496ED?logo=docker&logoColor=white)](https://docs.docker.com/compose/)
+> Deterministic, research-verified skills for Docker Engine 24+ and Docker Compose v2 — built for Claude Code.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Skills: 22](https://img.shields.io/badge/Skills-22-blue.svg)](INDEX.md)
+[![Docker: 24+](https://img.shields.io/badge/Docker-24%2B-2496ED.svg?logo=docker&logoColor=white)](https://docs.docker.com)
+[![Compose: v2](https://img.shields.io/badge/Compose-v2-2496ED.svg?logo=docker&logoColor=white)](https://docs.docker.com/compose/)
 [![OpenAEC](https://img.shields.io/badge/OpenAEC-Foundation-blue)](https://github.com/OpenAEC-Foundation)
-
-**A comprehensive Docker and Docker Compose skill package for Claude** — covering Dockerfile best practices, multi-stage builds, Compose orchestration, container security, networking, storage, and debugging patterns.
-
-Built for Docker Engine 24+ and Docker Compose v2.
 
 ---
 
-## What Is This?
+## What is this?
 
-This repository contains a curated collection of **Claude skills** that give Claude deep, actionable knowledge about Docker and Docker Compose. Each skill provides deterministic, best-practice guidance that Claude can use when helping you with containerization tasks.
+A curated collection of **22 deterministic skills** that teach Claude how to write, review, and debug Docker configurations. Every skill is verified against official Docker documentation — no hallucinated APIs, no vague advice.
 
-### Who Is This For?
+### Who is this for?
 
 - **Developers** who want Claude to write production-grade Dockerfiles and Compose files
 - **DevOps engineers** who want Claude to understand container orchestration patterns
@@ -24,56 +23,87 @@ This repository contains a curated collection of **Claude skills** that give Cla
 
 ---
 
-## Package Contents
+## Skill Categories
 
-| Category | Skills | Coverage |
-|----------|--------|----------|
-| `docker-syntax` | TBD | Dockerfile instructions, Compose directives, CLI commands |
-| `docker-impl` | TBD | Multi-stage builds, CI/CD integration, registry workflows |
-| `docker-errors` | TBD | Build failures, runtime debugging, networking issues |
-| `docker-core` | TBD | Security hardening, networking, storage, architecture |
-| `docker-agents` | TBD | Dockerfile generation, Compose validation, security audits |
+| Category | Count | Covers |
+|----------|-------|--------|
+| **core/** | 3 | Architecture, security hardening, networking fundamentals |
+| **syntax/** | 7 | Dockerfile instructions, BuildKit features, multi-stage builds, Compose services & resources, CLI commands |
+| **impl/** | 6 | Build optimization, production patterns, storage, CI/CD, Compose workflows, Go templates |
+| **errors/** | 4 | Build failures, runtime errors, networking issues, Compose troubleshooting |
+| **agents/** | 2 | Dockerfile/Compose validation and generation |
 
-**Current Progress:** Phase 1 — Infrastructure & Planning (50%)
+**[Full skill catalog &rarr;](INDEX.md)**
 
 ---
 
 ## Installation
 
-Add the skills to your Claude workspace:
+### Claude Code (recommended)
+
+Add to your project's `.claude/settings.json`:
+
+```json
+{
+  "skills": {
+    "docker": {
+      "source": "github:OpenAEC-Foundation/Docker-Claude-Skill-Package"
+    }
+  }
+}
+```
+
+### Manual
+
+Clone and reference skills directly:
 
 ```bash
-# Clone the repository
 git clone https://github.com/OpenAEC-Foundation/Docker-Claude-Skill-Package.git
-
-# Add to your Claude project's skill path
-# Reference skills from skills/source/docker-*/
 ```
+
+Then reference skills from `skills/source/docker-*/` in your Claude project configuration.
 
 ---
 
 ## Technology Coverage
 
-| Technology | Version | Coverage |
-|------------|---------|----------|
-| Docker Engine | 24+ | CLI, API, runtime configuration |
-| Docker Compose | v2 | Service definitions, networking, volumes, secrets |
-| BuildKit | Default builder | Cache mounts, secret mounts, heredocs |
-| Dockerfile | Current spec | All instructions, multi-stage, security |
+| Technology | Version | Skills |
+|-----------|---------|--------|
+| Docker Engine | 24+ | All skills |
+| Docker Compose | v2 | syntax-compose-\*, impl-compose-\* |
+| BuildKit | Default in 24+ | syntax-buildkit, impl-build-optimization |
+| Docker Scout | Latest | core-security |
+| Go Templates | — | impl-go-templates |
 
 ---
 
-## Project Documentation
+## Skill Structure
+
+Each skill follows a consistent format:
+
+- **SKILL.md** — Main skill file (<500 lines) with Quick Reference, Decision Trees, Patterns, Critical Warnings
+- **references/** — Extended content: detailed API references, code examples, anti-pattern catalogs
+
+### Quality Standards
+
+- All content in English with deterministic ALWAYS/NEVER language
+- All code examples verified against official Docker documentation
+- Every SKILL.md under 500 lines — heavy content in references/
+- YAML frontmatter with trigger-word-rich descriptions
+- Complete anti-pattern catalogs for every skill
+- All Dockerfile examples buildable, all Compose files pass `docker compose config`
+
+---
+
+## Documentation
 
 | Document | Purpose |
 |----------|---------|
-| [CLAUDE.md](CLAUDE.md) | Protocols and instructions for Claude sessions |
-| [ROADMAP.md](ROADMAP.md) | Project status and progress tracking |
+| [INDEX.md](INDEX.md) | Complete skill catalog with descriptions |
 | [REQUIREMENTS.md](REQUIREMENTS.md) | Quality guarantees and per-area requirements |
 | [DECISIONS.md](DECISIONS.md) | Architectural decisions with rationale |
-| [SOURCES.md](SOURCES.md) | Approved documentation sources |
+| [SOURCES.md](SOURCES.md) | Official documentation sources |
 | [WAY_OF_WORK.md](WAY_OF_WORK.md) | 7-phase methodology and skill standards |
-| [LESSONS.md](LESSONS.md) | Lessons learned during development |
 | [CHANGELOG.md](CHANGELOG.md) | Version history |
 
 ---
@@ -92,22 +122,30 @@ This package follows the **7-phase research-first development methodology** prov
 
 ---
 
-## Related Skill Packages
+## Contributing
 
-| Package | Technology |
-|---------|-----------|
-| [ERPNext Skill Package](https://github.com/OpenAEC-Foundation/ERPNext_Anthropic_Claude_Development_Skill_Package) | ERPNext / Frappe Framework |
-| [Blender-Bonsai Skill Package](https://github.com/OpenAEC-Foundation/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package) | Blender, Bonsai, IFC |
-| [Tauri 2 Skill Package](https://github.com/OpenAEC-Foundation/Tauri-2-Claude-Skill-Package) | Tauri 2.x (Rust + TypeScript) |
+This package follows the [7-phase research-first methodology](WAY_OF_WORK.md). Contributions must:
+
+1. Reference official Docker documentation (see [SOURCES.md](SOURCES.md))
+2. Use deterministic language (ALWAYS/NEVER)
+3. Keep SKILL.md under 500 lines
+4. Include references/ with examples and anti-patterns
+5. Target Docker Engine 24+ and Compose v2
+
+See [REQUIREMENTS.md](REQUIREMENTS.md) for full quality standards.
+
+---
+
+## Related Packages
+
+| Package | Skills | Technology |
+|---------|--------|-----------|
+| [ERPNext Skill Package](https://github.com/OpenAEC-Foundation/ERPNext_Anthropic_Claude_Development_Skill_Package) | 28 | ERPNext / Frappe Framework |
+| [Blender-Bonsai Skill Package](https://github.com/OpenAEC-Foundation/Blender-Bonsai-ifcOpenshell-Sverchok-Claude-Skill-Package) | 73 | Blender, Bonsai, IFC |
+| [Tauri 2 Skill Package](https://github.com/OpenAEC-Foundation/Tauri-2-Claude-Skill-Package) | 27 | Tauri 2.x (Rust + TypeScript) |
 
 ---
 
 ## License
 
-MIT License — Copyright (c) 2026 [OpenAEC Foundation](https://github.com/OpenAEC-Foundation)
-
----
-
-## Contributing
-
-This skill package is developed using the meta-orchestrator pattern with Claude Code. Contributions are welcome via pull requests. Please ensure all skills meet the quality standards defined in [REQUIREMENTS.md](REQUIREMENTS.md).
+[MIT](LICENSE) — Copyright (c) 2026 [OpenAEC Foundation](https://github.com/OpenAEC-Foundation)

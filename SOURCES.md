@@ -17,34 +17,34 @@
 ### Primary Documentation
 | Source | URL | Domain | Last Verified |
 |--------|-----|--------|---------------|
-| Docker Documentation | https://docs.docker.com | All Docker topics | Not yet verified |
-| Dockerfile Reference | https://docs.docker.com/reference/dockerfile/ | Dockerfile instructions | Not yet verified |
-| Compose Specification | https://docs.docker.com/compose/compose-file/ | Compose file format | Not yet verified |
-| Docker CLI Reference | https://docs.docker.com/reference/cli/docker/ | CLI commands | Not yet verified |
-| Docker Compose CLI | https://docs.docker.com/reference/cli/docker/compose/ | Compose commands | Not yet verified |
-| BuildKit Documentation | https://docs.docker.com/build/buildkit/ | BuildKit features | Not yet verified |
+| Docker Documentation | https://docs.docker.com | All Docker topics | 2026-03-19 |
+| Dockerfile Reference | https://docs.docker.com/reference/dockerfile/ | Dockerfile instructions | 2026-03-19 |
+| Compose Specification | https://docs.docker.com/compose/compose-file/ | Compose file format | 2026-03-19 |
+| Docker CLI Reference | https://docs.docker.com/reference/cli/docker/ | CLI commands | 2026-03-19 |
+| Docker Compose CLI | https://docs.docker.com/reference/cli/docker/compose/ | Compose commands | 2026-03-19 |
+| BuildKit Documentation | https://docs.docker.com/build/buildkit/ | BuildKit features | 2026-03-19 |
 
 ### Source Code Repositories
 | Source | URL | Domain | Last Verified |
 |--------|-----|--------|---------------|
-| Docker Engine (Moby) | https://github.com/moby/moby | Engine source | Not yet verified |
-| Docker Compose | https://github.com/docker/compose | Compose source | Not yet verified |
-| BuildKit | https://github.com/moby/buildkit | BuildKit source | Not yet verified |
-| Docker CLI | https://github.com/docker/cli | CLI source | Not yet verified |
+| Docker Engine (Moby) | https://github.com/moby/moby | Engine source | 2026-03-19 |
+| Docker Compose | https://github.com/docker/compose | Compose source | 2026-03-19 |
+| BuildKit | https://github.com/moby/buildkit | BuildKit source | 2026-03-19 |
+| Docker CLI | https://github.com/docker/cli | CLI source | 2026-03-19 |
 
 ### Best Practices & Security
 | Source | URL | Domain | Last Verified |
 |--------|-----|--------|---------------|
-| Dockerfile Best Practices | https://docs.docker.com/build/building/best-practices/ | Build optimization | Not yet verified |
-| Docker Security | https://docs.docker.com/engine/security/ | Security hardening | Not yet verified |
-| Docker Scout | https://docs.docker.com/scout/ | Image scanning | Not yet verified |
+| Dockerfile Best Practices | https://docs.docker.com/build/building/best-practices/ | Build optimization | 2026-03-19 |
+| Docker Security | https://docs.docker.com/engine/security/ | Security hardening | 2026-03-19 |
+| Docker Scout | https://docs.docker.com/scout/ | Image scanning | 2026-03-19 |
 
 ### Supplementary Sources
 | Source | URL | Domain | Last Verified |
 |--------|-----|--------|---------------|
-| OCI Image Spec | https://github.com/opencontainers/image-spec | Image format standard | Not yet verified |
-| OCI Runtime Spec | https://github.com/opencontainers/runtime-spec | Runtime standard | Not yet verified |
-| Docker Hub | https://hub.docker.com | Official images | Not yet verified |
+| OCI Image Spec | https://github.com/opencontainers/image-spec | Image format standard | 2026-03-19 |
+| OCI Runtime Spec | https://github.com/opencontainers/runtime-spec | Runtime standard | 2026-03-19 |
+| Docker Hub | https://hub.docker.com | Official images | 2026-03-19 |
 
 ---
 
