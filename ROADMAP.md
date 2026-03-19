@@ -14,9 +14,9 @@
 | 4 | Topic Research | Skipped | N/A |
 | 5 | Skill Development | Complete | 100% |
 | 6 | Validation & Quality | Complete | 100% |
-| 7 | Publication | In Progress | 90% |
+| 7 | Publication | Complete | 100% |
 
-**Overall: 98% — Audit remediation in progress, then publication.**
+**Overall: 100% — v1.0.0 published and audit remediation complete.**
 
 ---
 
@@ -66,22 +66,18 @@ Research fragments from Phase 2 were comprehensive enough.
 - [x] 259 ALWAYS/NEVER occurrences, zero vague phrases
 - [x] All 66 reference files exist and are linked
 
-## Phase 7: Publication (90%)
+## Phase 7: Publication (100%) ✓
 
 - [x] INDEX.md with complete skill catalog
 - [x] README.md with badges, installation, skill table
 - [x] CHANGELOG.md updated with v1.0.0
 - [x] ROADMAP.md reflects completion
-- [ ] GitHub repository push to OpenAEC-Foundation
-- [ ] Repository tags and description set
-- [ ] Release tag v1.0.0 created
-
-> **Note (2026-03-19):** Audit remediation in progress. Governance files (DECISIONS.md, LESSONS.md, ROADMAP.md) are being updated to reflect masterplan refinement decisions (D-008 to D-014), bulk commit documentation (D-015, D-016), and audit lessons (L-006, L-007). Remaining publication tasks will proceed after remediation is complete.
+- [x] GitHub repository pushed to OpenAEC-Foundation
+- [x] Repository description and topics set
+- [x] Release tag v1.0.0 created
+- [x] Compliance audit completed and remediated (2026-03-19)
 
 ---
 
 ## Next Steps
-1. Complete audit remediation (governance file updates)
-2. Push to GitHub: `git push origin main`
-3. Set repository description and topics
-4. Create release tag v1.0.0
+None — project complete. Maintenance only.
