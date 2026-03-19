@@ -1,5 +1,9 @@
 # Docker & Docker Compose Skill Package for Claude
 
+<p align="center">
+  <img src="docs/social-preview.png" alt="22 Deterministic Skills for Docker" width="100%">
+</p>
+
 > Deterministic, research-verified skills for Docker Engine 24+ and Docker Compose v2 — built for Claude Code.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
