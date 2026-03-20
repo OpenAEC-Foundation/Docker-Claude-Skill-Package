@@ -150,6 +150,17 @@ See [REQUIREMENTS.md](REQUIREMENTS.md) for full quality standards.
 
 ---
 
+## Companion Skills: Cross-Technology Integration
+
+> **[Cross-Tech AEC Integration Skills](https://github.com/OpenAEC-Foundation/Cross-Tech-AEC-Claude-Skill-Package)** — 15 skills for technology boundaries
+
+| Skill | Boundary | What it adds |
+|-------|----------|-------------|
+| `crosstech-impl-docker-aec-stack` | Docker ↔ AEC services | IfcOpenShell containers, Speckle Server deployment, QGIS Server, web-ifc workers |
+| `crosstech-impl-n8n-aec-pipeline` | n8n ↔ Docker | Containerized AEC automation pipelines |
+
+---
+
 ## License
 
 [MIT](LICENSE) — Copyright (c) 2026 [OpenAEC Foundation](https://github.com/OpenAEC-Foundation)
