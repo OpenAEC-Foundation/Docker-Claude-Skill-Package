@@ -6,7 +6,9 @@ description: >
   definitions, and zombie processes from shell-form ENTRYPOINT.
   Covers base image selection, USER, HEALTHCHECK, exec form, init,
   entrypoint scripts, OCI labels, digest pinning, and distroless images.
-  Keywords: USER, HEALTHCHECK, ENTRYPOINT, scratch, alpine, distroless, tini, exec form.
+  Keywords: USER, HEALTHCHECK, ENTRYPOINT, scratch, alpine, distroless,
+  tini, exec form, production ready, deploy container, secure container,
+  optimize for production, smaller image, harden Dockerfile.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

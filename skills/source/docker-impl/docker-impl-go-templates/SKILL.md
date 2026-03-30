@@ -6,7 +6,9 @@ description: >
   from missing braces, incorrect field paths, and unquoted json calls.
   Covers Go template syntax, {{ .Field }}, json, table, range, if/else,
   and ready-to-use format strings for inspect, ps, images, and stats.
-  Keywords: docker inspect, --format, Go template, json, table, range, docker ps format.
+  Keywords: docker inspect, --format, Go template, json, table, range,
+  docker ps format, format Docker output, get container IP, extract info,
+  custom output.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

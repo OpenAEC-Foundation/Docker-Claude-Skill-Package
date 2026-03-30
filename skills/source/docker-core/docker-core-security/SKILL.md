@@ -8,7 +8,9 @@ description: >
   Covers Docker Scout, Trivy, rootless Docker, USER instruction, cap-drop,
   read-only filesystems, seccomp, AppArmor, content trust, and resource limits.
   Keywords: docker scout, trivy, USER, cap-drop, --read-only, seccomp,
-  AppArmor, --no-new-privileges, DOCKER_CONTENT_TRUST, docker-bench-security.
+  AppArmor, --no-new-privileges, DOCKER_CONTENT_TRUST, docker-bench-security,
+  environment variable, password, secrets, credential leak, running as root,
+  container security, harden container.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

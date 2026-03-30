@@ -8,7 +8,8 @@ description: >
   Covers syntax directive, heredoc RUN, --mount=type=cache for apt/npm/pip/go,
   --mount=type=secret, --mount=type=ssh, bind mounts, and platform ARGs.
   Keywords: # syntax=docker/dockerfile:1, --mount=type=cache, --mount=type=secret,
-  --mount=type=ssh, heredoc, BUILDKIT_INLINE_CACHE, TARGETPLATFORM.
+  --mount=type=ssh, heredoc, BUILDKIT_INLINE_CACHE, TARGETPLATFORM,
+  build secrets, SSH in build, cache npm pip, modern Dockerfile syntax.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+ with BuildKit (default)."
 metadata:

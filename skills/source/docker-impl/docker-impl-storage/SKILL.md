@@ -6,7 +6,9 @@ description: >
   volumes on container removal and silent mount failures with -v syntax.
   Covers named volumes, bind mounts, tmpfs, --mount vs -v, volume drivers,
   NFS, CIFS, backup/restore, and Compose volume integration.
-  Keywords: docker volume, bind mount, tmpfs, --mount, -v, NFS, docker volume create, volumes-from.
+  Keywords: docker volume, bind mount, tmpfs, --mount, -v, NFS, docker
+  volume create, volumes-from, data loss, persist data, database volume,
+  where is my data, files disappear after restart.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

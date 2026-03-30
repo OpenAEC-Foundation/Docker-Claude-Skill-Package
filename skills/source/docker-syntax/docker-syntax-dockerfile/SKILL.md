@@ -9,7 +9,9 @@ description: >
   ADD, ENV, ARG, EXPOSE, VOLUME, WORKDIR, USER, HEALTHCHECK, LABEL, SHELL,
   STOPSIGNAL, ONBUILD, and parser directives.
   Keywords: FROM, RUN, CMD, ENTRYPOINT, COPY, ADD, HEALTHCHECK, USER,
-  WORKDIR, ARG, ENV, # syntax=docker/dockerfile:1.
+  WORKDIR, ARG, ENV, # syntax=docker/dockerfile:1, CMD vs ENTRYPOINT,
+  when to use, Dockerfile reference, Dockerfile best practices,
+  write a Dockerfile.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+ with BuildKit."
 metadata:

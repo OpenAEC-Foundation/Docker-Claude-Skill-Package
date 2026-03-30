@@ -8,7 +8,8 @@ description: >
   Covers bridge, host, overlay, macvlan, ipvlan, and none drivers, DNS
   resolution, port mapping, network isolation, and user-defined networks.
   Keywords: docker network create, --network, -p, --publish, bridge, overlay,
-  macvlan, docker-compose networks, DNS, service discovery.
+  macvlan, docker-compose networks, DNS, service discovery, containers can't
+  talk to each other, network not working, connect containers.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

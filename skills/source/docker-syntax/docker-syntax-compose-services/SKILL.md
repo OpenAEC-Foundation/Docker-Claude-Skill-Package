@@ -9,7 +9,8 @@ description: >
   depends_on with health conditions, healthcheck, deploy, restart, logging,
   profiles, and extends directives.
   Keywords: services, depends_on, condition: service_healthy, healthcheck,
-  ports, volumes, networks, deploy, restart, profiles, compose.yaml.
+  ports, volumes, networks, deploy, restart, profiles, compose.yaml,
+  write compose file, service definition, start order, wait for database.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Compose v2."
 metadata:

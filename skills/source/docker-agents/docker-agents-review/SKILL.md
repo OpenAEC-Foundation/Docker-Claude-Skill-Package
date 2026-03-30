@@ -8,7 +8,8 @@ description: >
   Covers Dockerfile best practices, Compose validation, security audit,
   production readiness checks, anti-pattern detection.
   Keywords: Dockerfile review, docker compose config, HEALTHCHECK,
-  USER, --no-cache, .dockerignore, capabilities, secrets, latest tag.
+  USER, --no-cache, .dockerignore, capabilities, secrets, latest tag,
+  is my Dockerfile secure, check my container, audit container, best practices.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+ and Docker Compose v2."
 metadata:

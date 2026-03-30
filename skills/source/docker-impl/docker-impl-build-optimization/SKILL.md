@@ -7,7 +7,9 @@ description: >
   Covers layer caching rules, cache invalidation triggers, instruction
   ordering, .dockerignore, --mount=type=cache, bind mounts, and CI/CD
   cache backends with BuildKit.
-  Keywords: docker build, cache, .dockerignore, BuildKit, --mount=type=cache, layer, COPY, RUN.
+  Keywords: docker build, cache, .dockerignore, BuildKit, --mount=type=cache,
+  layer, COPY, RUN, slow build, build takes too long, rebuild every time,
+  speed up Docker build, cache not working.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+ with BuildKit."
 metadata:

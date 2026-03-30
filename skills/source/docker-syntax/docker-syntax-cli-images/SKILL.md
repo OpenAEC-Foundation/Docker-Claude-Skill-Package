@@ -6,7 +6,9 @@ description: >
   broken deployments from incorrect tag or push sequences.
   Covers docker buildx build, pull, push, tag, images, rmi, image prune,
   save, load, history, manifest inspect, system df, and system prune.
-  Keywords: docker build, docker pull, docker push, docker tag, docker images, docker save, docker system prune.
+  Keywords: docker build, docker pull, docker push, docker tag, docker images,
+  docker save, docker system prune, disk space full, cleanup, dangling images,
+  free space, delete old images.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

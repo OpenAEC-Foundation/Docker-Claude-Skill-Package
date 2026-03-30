@@ -8,7 +8,8 @@ description: >
   Covers GitHub Actions workflows, GHCR and Docker Hub auth, buildx QEMU
   multi-platform builds, cache-to/cache-from, image tagging conventions.
   Keywords: docker/build-push-action, docker/login-action, buildx, QEMU,
-  GHCR, ghcr.io, docker push, CI/CD, GitHub Actions, matrix builds.
+  GHCR, ghcr.io, docker push, CI/CD, GitHub Actions, matrix builds,
+  automate Docker build, push to registry, deploy container, pipeline.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+ with BuildKit."
 metadata:

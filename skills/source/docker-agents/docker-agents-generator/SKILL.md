@@ -8,7 +8,9 @@ description: >
   Covers Dockerfile generation for Node.js, Python, Go, Java, Rust,
   .NET, dev/prod Compose stacks, .dockerignore, .env templates.
   Keywords: Dockerfile, docker-compose.yml, multi-stage build,
-  .dockerignore, HEALTHCHECK, non-root, FROM, COPY, ENTRYPOINT.
+  .dockerignore, HEALTHCHECK, non-root, FROM, COPY, ENTRYPOINT,
+  containerize my app, dockerize, create Dockerfile for my project,
+  how to Docker, new container setup.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+ and Docker Compose v2."
 metadata:

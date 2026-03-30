@@ -8,7 +8,9 @@ description: >
   Covers exit codes, OOMKilled, port conflicts, exec format error,
   read-only filesystem, PID limits, resource exhaustion debugging.
   Keywords: docker logs, docker inspect, OOMKilled, exit code 137,
-  permission denied, port already in use, SIGTERM, SIGKILL, docker exec.
+  permission denied, port already in use, SIGTERM, SIGKILL, docker exec,
+  exits immediately, container won't start, restart loop, out of memory,
+  container crashes, why did my container stop.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

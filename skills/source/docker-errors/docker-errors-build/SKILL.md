@@ -7,7 +7,8 @@ description: >
   Covers build errors, COPY/ADD not found, context too large, cache misses,
   ARG/ENV scope, multi-stage reference errors, platform mismatch.
   Keywords: docker build, COPY failed, cache invalidation, BuildKit,
-  multi-stage, ARG, --mount, exec format error, build context.
+  multi-stage, ARG, --mount, exec format error, build context,
+  build fails, file not found during build, wrong platform, slow build.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

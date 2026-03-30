@@ -6,7 +6,9 @@ description: >
   and secrets mounted with wrong permissions.
   Covers networks, volumes, configs, secrets, IPAM, external resources,
   network aliases, volume drivers, and overlay networks.
-  Keywords: docker compose, networks, volumes, configs, secrets, IPAM, overlay, bridge.
+  Keywords: docker compose, networks, volumes, configs, secrets, IPAM,
+  overlay, bridge, shared network, shared volume, compose resources,
+  service communication.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Compose v2."
 metadata:

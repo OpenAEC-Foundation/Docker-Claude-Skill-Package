@@ -8,7 +8,9 @@ description: >
   Covers FROM AS stage naming, COPY --from, parallel stages, --target for
   partial builds, builder pattern, test stages, and shared dependency stages.
   Keywords: FROM AS, COPY --from, --target, docker build --target,
-  multi-stage, builder pattern, distroless, alpine, scratch.
+  multi-stage, builder pattern, distroless, alpine, scratch,
+  reduce image size, Docker image too big, smaller container,
+  separate build and runtime.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+ with BuildKit."
 metadata:

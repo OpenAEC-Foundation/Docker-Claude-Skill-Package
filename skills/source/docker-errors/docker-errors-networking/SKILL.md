@@ -8,7 +8,8 @@ description: >
   Covers DNS failures, connection refused, port mapping issues, iptables
   conflicts, overlay network problems, subnet collisions.
   Keywords: docker network, DNS resolution, connection refused, bridge,
-  overlay, iptables, port mapping, docker network inspect, subnet.
+  overlay, iptables, port mapping, docker network inspect, subnet,
+  can't reach container, port not accessible, network error, DNS not resolving.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

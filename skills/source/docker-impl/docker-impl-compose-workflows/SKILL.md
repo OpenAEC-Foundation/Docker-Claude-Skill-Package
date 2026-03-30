@@ -6,7 +6,9 @@ description: >
   precedence and broken extends from circular dependencies.
   Covers profiles, extends, include, compose.override.yaml, .env file
   precedence, compose watch, and multi-file merge patterns.
-  Keywords: docker compose, profiles, extends, include, override, .env, compose watch, environment.
+  Keywords: docker compose, profiles, extends, include, override, .env,
+  compose watch, environment, dev vs production compose, multiple environments,
+  compose file organization, hot reload.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Compose v2."
 metadata:

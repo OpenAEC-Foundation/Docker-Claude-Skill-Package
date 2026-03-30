@@ -6,7 +6,9 @@ description: >
   skipped stop commands, and incorrect docker run flag combinations.
   Covers docker run, exec, logs, inspect, stats, ps, cp, stop, kill, rm,
   prune, and container lifecycle management.
-  Keywords: docker run, docker exec, docker logs, docker inspect, docker ps, docker stop, docker rm.
+  Keywords: docker run, docker exec, docker logs, docker inspect, docker ps,
+  docker stop, docker rm, how to run container, check container logs,
+  enter running container, list containers, manage containers.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

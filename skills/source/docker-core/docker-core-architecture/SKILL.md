@@ -8,7 +8,8 @@ description: >
   Covers Docker Engine architecture, OCI standards, image layers, container
   lifecycle, build context model, and Docker object types.
   Keywords: dockerd, containerd, runc, OCI, image layers, docker build,
-  docker run, BuildKit, container lifecycle.
+  docker run, BuildKit, container lifecycle, how Docker works, what is a container,
+  Docker internals, image vs container.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Engine 24+."
 metadata:

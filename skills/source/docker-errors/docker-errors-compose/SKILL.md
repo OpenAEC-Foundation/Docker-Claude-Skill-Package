@@ -8,7 +8,9 @@ description: >
   Covers service dependency errors, orphan containers, port conflicts,
   volume permission issues, profile resolution, build context errors.
   Keywords: docker compose up, docker compose config, depends_on,
-  service_healthy, orphan containers, variable interpolation, profiles.
+  service_healthy, orphan containers, variable interpolation, profiles,
+  compose won't start, service keeps restarting, port already in use,
+  services not connecting.
 license: MIT
 compatibility: "Designed for Claude Code. Requires Docker Compose v2."
 metadata:
