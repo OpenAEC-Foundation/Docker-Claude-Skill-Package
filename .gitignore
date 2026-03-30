@@ -3,5 +3,6 @@ node_modules/
 *.log
 .env
 PROMPTS.md
+SKILLS_LOG.md
 .claude/settings.local.json
 Docker-Claude-Skill-Package.code-workspace
